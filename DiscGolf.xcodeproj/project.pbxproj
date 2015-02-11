@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3058AD481A8B158800622190 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3058AD471A8B158800622190 /* main.m */; };
+		3058AD4B1A8B158800622190 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3058AD4A1A8B158800622190 /* AppDelegate.m */; };
+		3058AD4E1A8B158800622190 /* DiscGolf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3058AD4C1A8B158800622190 /* DiscGolf.xcdatamodeld */; };
+		3058AD511A8B158800622190 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3058AD501A8B158800622190 /* ViewController.m */; };
+		3058AD541A8B158800622190 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3058AD521A8B158800622190 /* Main.storyboard */; };
+		3058AD561A8B158800622190 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3058AD551A8B158800622190 /* Images.xcassets */; };
+		3058AD591A8B158800622190 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3058AD571A8B158800622190 /* LaunchScreen.xib */; };
+		3058AD651A8B158900622190 /* DiscGolfTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3058AD641A8B158900622190 /* DiscGolfTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3058AD5F1A8B158900622190 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3058AD3A1A8B158800622190 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3058AD411A8B158800622190;
+			remoteInfo = DiscGolf;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3058AD421A8B158800622190 /* DiscGolf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscGolf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3058AD461A8B158800622190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3058AD471A8B158800622190 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3058AD491A8B158800622190 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3058AD4A1A8B158800622190 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3058AD4D1A8B158800622190 /* DiscGolf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DiscGolf.xcdatamodel; sourceTree = "<group>"; };
+		3058AD4F1A8B158800622190 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3058AD501A8B158800622190 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3058AD531A8B158800622190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3058AD551A8B158800622190 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3058AD581A8B158800622190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3058AD5E1A8B158900622190 /* DiscGolfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscGolfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3058AD631A8B158900622190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3058AD641A8B158900622190 /* DiscGolfTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscGolfTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3058AD3F1A8B158800622190 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3058AD5B1A8B158900622190 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3058AD391A8B158800622190 = {
+			isa = PBXGroup;
+			children = (
+				3058AD441A8B158800622190 /* DiscGolf */,
+				3058AD611A8B158900622190 /* DiscGolfTests */,
+				3058AD431A8B158800622190 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3058AD431A8B158800622190 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3058AD421A8B158800622190 /* DiscGolf.app */,
+				3058AD5E1A8B158900622190 /* DiscGolfTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3058AD441A8B158800622190 /* DiscGolf */ = {
+			isa = PBXGroup;
+			children = (
+				3058AD491A8B158800622190 /* AppDelegate.h */,
+				3058AD4A1A8B158800622190 /* AppDelegate.m */,
+				3058AD4F1A8B158800622190 /* ViewController.h */,
+				3058AD501A8B158800622190 /* ViewController.m */,
+				3058AD521A8B158800622190 /* Main.storyboard */,
+				3058AD551A8B158800622190 /* Images.xcassets */,
+				3058AD571A8B158800622190 /* LaunchScreen.xib */,
+				3058AD4C1A8B158800622190 /* DiscGolf.xcdatamodeld */,
+				3058AD451A8B158800622190 /* Supporting Files */,
+			);
+			path = DiscGolf;
+			sourceTree = "<group>";
+		};
+		3058AD451A8B158800622190 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3058AD461A8B158800622190 /* Info.plist */,
+				3058AD471A8B158800622190 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3058AD611A8B158900622190 /* DiscGolfTests */ = {
+			isa = PBXGroup;
+			children = (
+				3058AD641A8B158900622190 /* DiscGolfTests.m */,
+				3058AD621A8B158900622190 /* Supporting Files */,
+			);
+			path = DiscGolfTests;
+			sourceTree = "<group>";
+		};
+		3058AD621A8B158900622190 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3058AD631A8B158900622190 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3058AD411A8B158800622190 /* DiscGolf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3058AD681A8B158900622190 /* Build configuration list for PBXNativeTarget "DiscGolf" */;
+			buildPhases = (
+				3058AD3E1A8B158800622190 /* Sources */,
+				3058AD3F1A8B158800622190 /* Frameworks */,
+				3058AD401A8B158800622190 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiscGolf;
+			productName = DiscGolf;
+			productReference = 3058AD421A8B158800622190 /* DiscGolf.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3058AD5D1A8B158900622190 /* DiscGolfTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3058AD6B1A8B158900622190 /* Build configuration list for PBXNativeTarget "DiscGolfTests" */;
+			buildPhases = (
+				3058AD5A1A8B158900622190 /* Sources */,
+				3058AD5B1A8B158900622190 /* Frameworks */,
+				3058AD5C1A8B158900622190 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3058AD601A8B158900622190 /* PBXTargetDependency */,
+			);
+			name = DiscGolfTests;
+			productName = DiscGolfTests;
+			productReference = 3058AD5E1A8B158900622190 /* DiscGolfTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3058AD3A1A8B158800622190 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Daniel Bladh";
+				TargetAttributes = {
+					3058AD411A8B158800622190 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					3058AD5D1A8B158900622190 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 3058AD411A8B158800622190;
+					};
+				};
+			};
+			buildConfigurationList = 3058AD3D1A8B158800622190 /* Build configuration list for PBXProject "DiscGolf" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3058AD391A8B158800622190;
+			productRefGroup = 3058AD431A8B158800622190 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3058AD411A8B158800622190 /* DiscGolf */,
+				3058AD5D1A8B158900622190 /* DiscGolfTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3058AD401A8B158800622190 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3058AD541A8B158800622190 /* Main.storyboard in Resources */,
+				3058AD591A8B158800622190 /* LaunchScreen.xib in Resources */,
+				3058AD561A8B158800622190 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3058AD5C1A8B158900622190 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3058AD3E1A8B158800622190 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3058AD4B1A8B158800622190 /* AppDelegate.m in Sources */,
+				3058AD481A8B158800622190 /* main.m in Sources */,
+				3058AD511A8B158800622190 /* ViewController.m in Sources */,
+				3058AD4E1A8B158800622190 /* DiscGolf.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3058AD5A1A8B158900622190 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3058AD651A8B158900622190 /* DiscGolfTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3058AD601A8B158900622190 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3058AD411A8B158800622190 /* DiscGolf */;
+			targetProxy = 3058AD5F1A8B158900622190 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3058AD521A8B158800622190 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3058AD531A8B158800622190 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3058AD571A8B158800622190 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3058AD581A8B158800622190 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3058AD661A8B158900622190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3058AD671A8B158900622190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3058AD691A8B158900622190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DiscGolf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3058AD6A1A8B158900622190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DiscGolf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3058AD6C1A8B158900622190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DiscGolfTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiscGolf.app/DiscGolf";
+			};
+			name = Debug;
+		};
+		3058AD6D1A8B158900622190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DiscGolfTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiscGolf.app/DiscGolf";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3058AD3D1A8B158800622190 /* Build configuration list for PBXProject "DiscGolf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3058AD661A8B158900622190 /* Debug */,
+				3058AD671A8B158900622190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3058AD681A8B158900622190 /* Build configuration list for PBXNativeTarget "DiscGolf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3058AD691A8B158900622190 /* Debug */,
+				3058AD6A1A8B158900622190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3058AD6B1A8B158900622190 /* Build configuration list for PBXNativeTarget "DiscGolfTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3058AD6C1A8B158900622190 /* Debug */,
+				3058AD6D1A8B158900622190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3058AD4C1A8B158800622190 /* DiscGolf.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3058AD4D1A8B158800622190 /* DiscGolf.xcdatamodel */,
+			);
+			currentVersion = 3058AD4D1A8B158800622190 /* DiscGolf.xcdatamodel */;
+			path = DiscGolf.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3058AD3A1A8B158800622190 /* Project object */;
+}
