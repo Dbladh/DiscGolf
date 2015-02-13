@@ -7,8 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import "FacebookViewController.h"
+#import <Parse/Parse.h>
+#import <FacebookSDK/FacebookSDK.h>
+#import <ParseFacebookUtils/PFFacebookUtils.h>
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) UITabBarController * tabBarController;
 
 @end
 
@@ -17,6 +23,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    FacebookViewController * viewController = [FacebookViewController new];
+    UINavigationController * navcontroller = [[UINavigationController alloc]initWithRootViewController:viewController];
+    self.window.rootViewController = navcontroller;
+    
+    // [Optional] Power your app with Local Datastore. For more info, go to
+    // https://parse.com/docs/ios_guide#localdatastore/iOS
+    [Parse enableLocalDatastore];
+    
+    // Initialize Parse.
+    [Parse setApplicationId:@"S7EnP2ksmDWfEPJN6lotQCOAksZml2O8wFMaaO54"
+                  clientKey:@"yNkAb4eVx5HlJX1SiRHhgYkVvQaLe7qSxSeVFFb9"];
+    
+    // [Optional] Track statistics around application opens.
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    // ...
+    
+        
     return YES;
 }
 
@@ -36,12 +61,41 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    // Logs 'install' and 'app activate' App Events.
+    [FBAppEvents activateApp];
+    [FBAppCall handleDidBecomeActiveWithSession:[PFFacebookUtils session]];
+    
+    
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
+}
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    
+    // Call FBAppCall's handleOpenURL:sourceApplication to handle Facebook app responses
+    BOOL wasHandled = [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
+    
+    return [FBAppCall handleOpenURL:url
+                  sourceApplication:sourceApplication
+                        withSession:[PFFacebookUtils session]];
+    
+    // You can add your app-specific url handling code here if needed
+    
+    return wasHandled;
+}
+
+- (void)application:(UIApplication *)application didFinishLaunchWithOptions:(NSDictionary *)options {
+    [Parse setApplicationId:@"parseAppId" clientKey:@"parseClientKey"];
+    [PFFacebookUtils initializeFacebook];
 }
 
 #pragma mark - Core Data stack
