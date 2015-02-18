@@ -41,6 +41,7 @@
 		3082AF301A8C82DC00D2805B /* FBAudienceNetwork.README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3082AF2A1A8C82DC00D2805B /* FBAudienceNetwork.README.txt */; };
 		3082AF311A8C82DC00D2805B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3082AF2B1A8C82DC00D2805B /* LICENSE */; };
 		3082AF321A8C82DC00D2805B /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3082AF2C1A8C82DC00D2805B /* README.txt */; };
+		30D930661A8FB8FF00AEFEC4 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D930651A8FB8FF00AEFEC4 /* GameKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		3082AF2A1A8C82DC00D2805B /* FBAudienceNetwork.README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FBAudienceNetwork.README.txt; sourceTree = "<group>"; };
 		3082AF2B1A8C82DC00D2805B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3082AF2C1A8C82DC00D2805B /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		30D930651A8FB8FF00AEFEC4 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				3082AF1B1A8C817E00D2805B /* CoreGraphics.framework in Frameworks */,
 				3082AF1C1A8C817E00D2805B /* CoreLocation.framework in Frameworks */,
 				3082AF1D1A8C817E00D2805B /* MobileCoreServices.framework in Frameworks */,
+				30D930661A8FB8FF00AEFEC4 /* GameKit.framework in Frameworks */,
 				3082AF1E1A8C817E00D2805B /* QuartzCore.framework in Frameworks */,
 				3082AF1F1A8C817E00D2805B /* Security.framework in Frameworks */,
 				3082AF201A8C817E00D2805B /* StoreKit.framework in Frameworks */,
@@ -140,6 +143,7 @@
 		3058AD391A8B158800622190 = {
 			isa = PBXGroup;
 			children = (
+				30D930651A8FB8FF00AEFEC4 /* GameKit.framework */,
 				3058AD441A8B158800622190 /* DiscGolf */,
 				3058AD611A8B158900622190 /* DiscGolfTests */,
 				3058AD431A8B158800622190 /* Products */,
@@ -295,6 +299,12 @@
 				TargetAttributes = {
 					3058AD411A8B158800622190 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = CDJ8USG7DJ;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
 					};
 					3058AD5D1A8B158900622190 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -482,6 +492,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -490,6 +502,7 @@
 				INFOPLIST_FILE = DiscGolf/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -497,6 +510,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -505,6 +520,7 @@
 				INFOPLIST_FILE = DiscGolf/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -10,4 +10,6 @@
 
 @interface AddPlayersViewController : UIViewController
 
+@property (strong, nonatomic) UIWindow *window;
+
 @end

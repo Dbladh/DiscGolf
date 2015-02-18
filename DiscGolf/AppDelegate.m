@@ -36,6 +36,8 @@
     [Parse setApplicationId:@"S7EnP2ksmDWfEPJN6lotQCOAksZml2O8wFMaaO54"
                   clientKey:@"yNkAb4eVx5HlJX1SiRHhgYkVvQaLe7qSxSeVFFb9"];
     
+    
+    
     // [Optional] Track statistics around application opens.
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
@@ -66,8 +68,6 @@
     [FBAppEvents activateApp];
     [FBAppCall handleDidBecomeActiveWithSession:[PFFacebookUtils session]];
     
-    
-    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
@@ -93,6 +93,7 @@
     return wasHandled;
 }
 
+
 - (void)application:(UIApplication *)application didFinishLaunchWithOptions:(NSDictionary *)options {
     [Parse setApplicationId:@"parseAppId" clientKey:@"parseClientKey"];
     [PFFacebookUtils initializeFacebook];
@@ -107,6 +108,8 @@
 - (NSURL *)applicationDocumentsDirectory {
     // The directory the application uses to store the Core Data store file. This code uses a directory named "com.DanielBladh.DiscGolf" in the application's documents directory.
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+    
+    
 }
 
 - (NSManagedObjectModel *)managedObjectModel {

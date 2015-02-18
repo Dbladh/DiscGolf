@@ -8,7 +8,8 @@
 
 #import "FacebookViewController.h"
 #import <FacebookSDK/FacebookSDK.h>
-#import "ViewController.h"
+#import <ParseFacebookUtils/PFFacebookUtils.h>
+#import "AddPlayersViewController.h"
 
 @interface FacebookViewController () <FBLoginViewDelegate>
 
@@ -39,19 +40,17 @@
     [self.view addSubview: self.startGameButton];
     
     self.addPlayerButton = [[UIButton alloc] initWithFrame:CGRectMake(40, 275, 300, 50)];
-    [self.addPlayerButton setTitle:@"Add Player" forState:UIControlStateNormal];
+    [self.addPlayerButton setTitle:@"Add Course" forState:UIControlStateNormal];
     [self.view addSubview: self.addPlayerButton];
     
     self.startGameButton.backgroundColor = [UIColor blueColor];
     self.addPlayerButton.backgroundColor = [UIColor blueColor];
     
-    
     [self.startGameButton addTarget:self action:@selector(startGameButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     
-    
-    
-
 }
+
+
 
 
 -(void)loginViewShowingLoggedInUser:(FBLoginView *)loginView{
@@ -95,8 +94,10 @@ user:(id<FBGraphUser>)user {
 }
 
 -(void)startGameButtonPressed:(id)sender{
-    [self.navigationController pushViewController:[ViewController new] animated:YES];
+    [self.navigationController pushViewController:[AddPlayersViewController new] animated:YES];
 }
+
+
 
 
 
