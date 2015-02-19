@@ -6,20 +6,20 @@
 //  Copyright (c) 2015 Daniel Bladh. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "AddCourseViewController.h"
 #import "AddPlayersViewController.h"
 #import "ChoosePlayersViewController.h"
 #import "HistoryViewController.h"
 #import "FacebookViewController.h"
 #import <FacebookSDK/FacebookSDK.h>
 
-@interface ViewController ()
+@interface AddCourseViewController ()
 
 @property (nonatomic, strong) UITabBarController * tabBarController;
 
 @end
 
-@implementation ViewController
+@implementation AddCourseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

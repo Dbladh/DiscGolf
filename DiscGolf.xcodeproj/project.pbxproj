@@ -10,7 +10,7 @@
 		3058AD481A8B158800622190 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3058AD471A8B158800622190 /* main.m */; };
 		3058AD4B1A8B158800622190 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3058AD4A1A8B158800622190 /* AppDelegate.m */; };
 		3058AD4E1A8B158800622190 /* DiscGolf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3058AD4C1A8B158800622190 /* DiscGolf.xcdatamodeld */; };
-		3058AD511A8B158800622190 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3058AD501A8B158800622190 /* ViewController.m */; };
+		3058AD511A8B158800622190 /* AddCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3058AD501A8B158800622190 /* AddCourseViewController.m */; };
 		3058AD541A8B158800622190 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3058AD521A8B158800622190 /* Main.storyboard */; };
 		3058AD561A8B158800622190 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3058AD551A8B158800622190 /* Images.xcassets */; };
 		3058AD591A8B158800622190 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3058AD571A8B158800622190 /* LaunchScreen.xib */; };
@@ -61,8 +61,8 @@
 		3058AD491A8B158800622190 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3058AD4A1A8B158800622190 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3058AD4D1A8B158800622190 /* DiscGolf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DiscGolf.xcdatamodel; sourceTree = "<group>"; };
-		3058AD4F1A8B158800622190 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3058AD501A8B158800622190 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3058AD4F1A8B158800622190 /* AddCourseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddCourseViewController.h; sourceTree = "<group>"; };
+		3058AD501A8B158800622190 /* AddCourseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddCourseViewController.m; sourceTree = "<group>"; };
 		3058AD531A8B158800622190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3058AD551A8B158800622190 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3058AD581A8B158800622190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -167,8 +167,8 @@
 				3058AD4A1A8B158800622190 /* AppDelegate.m */,
 				3082AF0D1A8C650000D2805B /* FacebookViewController.h */,
 				3082AF0E1A8C650000D2805B /* FacebookViewController.m */,
-				3058AD4F1A8B158800622190 /* ViewController.h */,
-				3058AD501A8B158800622190 /* ViewController.m */,
+				3058AD4F1A8B158800622190 /* AddCourseViewController.h */,
+				3058AD501A8B158800622190 /* AddCourseViewController.m */,
 				3058AD7A1A8B200700622190 /* HistoryViewController.h */,
 				3058AD7B1A8B200700622190 /* HistoryViewController.m */,
 				3058AD6E1A8B172B00622190 /* ChoosePlayersViewController.h */,
@@ -366,7 +366,7 @@
 				3058AD701A8B172B00622190 /* ChoosePlayersViewController.m in Sources */,
 				3058AD761A8B176100622190 /* AddPlayersViewController.m in Sources */,
 				3058AD481A8B158800622190 /* main.m in Sources */,
-				3058AD511A8B158800622190 /* ViewController.m in Sources */,
+				3058AD511A8B158800622190 /* AddCourseViewController.m in Sources */,
 				3082AF0F1A8C650000D2805B /* FacebookViewController.m in Sources */,
 				3058AD4E1A8B158800622190 /* DiscGolf.xcdatamodeld in Sources */,
 			);

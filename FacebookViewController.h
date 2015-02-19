@@ -11,4 +11,7 @@
 
 @interface FacebookViewController : UIViewController
 
+@property (nonatomic, strong) UIButton * startGameButton;
+@property (nonatomic, strong) UIButton * addCourseButton;
+
 @end

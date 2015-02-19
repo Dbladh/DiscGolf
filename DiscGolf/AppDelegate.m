@@ -11,10 +11,12 @@
 #import <Parse/Parse.h>
 #import <FacebookSDK/FacebookSDK.h>
 #import <ParseFacebookUtils/PFFacebookUtils.h>
+#import "AddCourseViewController.h"
+#import "HistoryViewController.h"
 
 @interface AppDelegate ()
 
-@property (nonatomic, strong) UITabBarController * tabBarController;
+
 
 @end
 
@@ -22,11 +24,34 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    FacebookViewController * viewController = [FacebookViewController new];
-    UINavigationController * navcontroller = [[UINavigationController alloc]initWithRootViewController:viewController];
-    self.window.rootViewController = navcontroller;
+    FacebookViewController * facebookViewController = [FacebookViewController new];
+    UINavigationController * facebookNavController = [[UINavigationController alloc]initWithRootViewController:facebookViewController];
+    facebookViewController.tabBarItem.title = @"Home";
+    facebookViewController.tabBarItem.image = [UIImage imageNamed: @"discIcon1"];
+    
+    AddCourseViewController * addCourseViewController = [AddCourseViewController new];
+    UINavigationController * addCourseNavController = [[UINavigationController alloc]initWithRootViewController:addCourseViewController];
+    addCourseViewController.tabBarItem.title = @"Add Course";
+    addCourseViewController.tabBarItem.image = [UIImage imageNamed: @"discIcon1"];
+    
+    HistoryViewController * historyViewController = [HistoryViewController new];
+    UINavigationController * historyNavController = [[UINavigationController alloc]initWithRootViewController:historyViewController];
+    historyViewController.tabBarItem.title = @"History";
+    historyViewController.tabBarItem.image = [UIImage imageNamed: @"discIcon1"];
+    
+    UITabBarController *tabBarController = [UITabBarController new];
+    tabBarController.viewControllers = @[facebookNavController, addCourseNavController, historyNavController];
+    
+    self.window.rootViewController = tabBarController;
+    
+    
+    
+        
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     
     // [Optional] Power your app with Local Datastore. For more info, go to
     // https://parse.com/docs/ios_guide#localdatastore/iOS
